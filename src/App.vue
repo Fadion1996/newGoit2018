@@ -5,6 +5,7 @@
       <router-link to="/PreviewCard">PreviewCardBottom</router-link>
       <router-view/>
     </div>
+    <div></div>
   </div>
 </template>
 
