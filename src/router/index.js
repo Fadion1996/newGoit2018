@@ -1,9 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import MainPage from '@/components/MainPage'
-import PreviewCardBottom from '@/components/PreviewCard/PreviewCardBottom'
-
-
+import details from '@/components/details'
+import home from '@/components/home'
+import search from '@/components/search'
 
 Vue.use(Router)
 
@@ -11,13 +10,18 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'MainPage',
-      component: MainPage
+      name: 'home',
+      component: home
     },
     {
-      path: '/PreviewCard',
-      name: 'PreviewCardBottom',
-      component: PreviewCardBottom
+      path: '/details',
+      name: 'details',
+      component: details
+    },
+    {
+      path: '/search',
+      name: 'search',
+      component: search
     }
   ]
 })
